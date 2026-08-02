@@ -50,12 +50,12 @@ const Hero = () => {
                     </div>
 
                     <p className="text-white-50 md:text-xl relative z-10 pointer-events-none"  >
-                        Hi, I'm Rudra, a developer from Kolkata, India with a passion for coding.
+                        Hi, I'm Rudranil Mondal — a full-stack developer building AI-powered web apps and scalable systems. Currently pursuing BTech CSE at NIT Durgapur.
                     </p>  
                     <Button 
-                    className='md:w-80 md:h-16 w-60 h-12'
-                    id='button'
-                    text="See My Work"
+                      className='md:w-80 md:h-16 w-60 h-12'
+                      targetId='work'
+                      text="See My Work"
                     />
                 </div>
             </header>

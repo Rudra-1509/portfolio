@@ -111,6 +111,34 @@ const Contact = () => {
                 </button>
               </form>
             </div>
+            {/* Contact Info */}
+            <div className="mt-8 space-y-4">
+              <div className="flex items-center gap-4">
+                <span className="text-white-50">📧</span>
+                <div>
+                  <p className="text-sm text-white-50">Email</p>
+                  <a href="mailto:rudranilmn1509@gmail.com" className="text-blue-400 hover:text-blue-300">
+                    rudranilmn1509@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <span className="text-white-50">📱</span>
+                <div>
+                  <p className="text-sm text-white-50">Phone</p>
+                  <a href="tel:+919477926507" className="text-blue-400 hover:text-blue-300">
+                    +91 9477926507
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <span className="text-white-50">📍</span>
+                <div>
+                  <p className="text-sm text-white-50">Location</p>
+                  <p className="text-white">Kolkata, India</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
             <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">

@@ -4,16 +4,12 @@ const navLinks = [
     link: "#work",
   },
   {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
     name: "Skills",
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Contact",
+    link: "#contact",
   },
 ];
 
@@ -29,10 +25,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 3, suffix: "+", label: "Featured Projects" },
+  { value: 300, suffix: "+", label: "LeetCode Problems" },
+  { value: 9.2, suffix: "/10", label: "CGPA" },
+  { value: 2027, suffix: "", label: "Graduation Year" },
 ];
 
 const logoIconsList = [
@@ -74,18 +70,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Full-Stack Development",
+    desc: "Building scalable web applications with React, Next.js, FastAPI, and modern development practices.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "AI/ML Integration",
+    desc: "Implementing AI solutions using LLMs, RAG, transformers, and vector databases for intelligent applications.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Problem Solving",
+    desc: "Strong foundation in data structures, algorithms, and system design. 300+ LeetCode problems solved.",
   },
 ];
 
@@ -246,24 +242,81 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    url:"",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    url:"",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    url:"",
-    imgPath: "/images/x.png",
+    name: "github",
+    url:"https://github.com/Rudra-1509",
+    imgPath: "/images/github.png",
   },
   {
     name: "linkedin",
-    url:"",
+    url:"https://www.linkedin.com/in/rudranilmondal/",
     imgPath: "/images/linkedin.png",
+  },
+  {
+    name: "x",
+    url:"https://twitter.com",
+    imgPath: "/images/x.png",
+  },
+  {
+    name: "email",
+    url:"mailto:rudranilmn1509@gmail.com",
+    imgPath: "/images/email.png",
+  },
+];
+
+const projects = [
+  {
+    title: "Multi-Agent Orchestration System",
+    description: "Real-time multi-agent orchestration where specialized agents collaborate using supervisor-based routing architecture. Implemented LLM-driven task decomposition with SSE-based streaming for live agent execution visualization.",
+    tech: ["Python", "FastAPI", "LangGraph", "React", "TanStack Start"],
+    liveLink: "https://multi-agentorchestration.vercel.app",
+    githubLink: "https://github.com/Rudra-1509/multi-agent-orchestration",
+    imgPath: "/images/project_multiagent.png",
+    date: "Feb 2026 - May 2026",
+  },
+  {
+    title: "AI Mock Interviewer (Voice-Based)",
+    description: "Full-stack voice-based AI mock interview platform that simulates technical and behavioral interviews using conversational AI. Integrated real-time speech recognition and dynamic question generation with AI-powered feedback analysis.",
+    tech: ["Next.js", "Vapi", "OpenAI", "Firebase", "Tailwind"],
+    liveLink: "https://ai-mock-interview-orcin.vercel.app",
+    githubLink: "https://github.com/Rudra-1509/ai_mock_interview",
+    imgPath: "/images/project_interview.png",
+    date: "Apr 2025 - Jul 2025",
+  },
+  {
+    title: "AI Study Assistant",
+    description: "AI-powered study assistant that transforms PDFs, images, and raw text into structured explanations using OCR and semantic retrieval. Achieved 100% processing success rate on 31 diverse documents with average latency of 55.6s.",
+    tech: ["React", "FastAPI", "Transformers", "HuggingFace", "Python"],
+    liveLink: "https://ai-study-assistant-sand.vercel.app",
+    githubLink: "https://github.com/Rudra-1509/ai-study-assistant",
+    imgPath: "/images/project_study.png",
+    date: "Nov 2025 - Jan 2026",
+  },
+  {
+    title: "Apple iPhone 15 Clone",
+    description: "Responsive e-commerce website clone showcasing modern web design with smooth animations and interactive product showcase using React and Three.js.",
+    tech: ["React", "Three.js", "Tailwind CSS", "JavaScript"],
+    liveLink: "https://apple-i-phone-clone-mu.vercel.app",
+    githubLink: "https://github.com/Rudra-1509/apple_iPhone_clone",
+    imgPath: "/images/project3.png",
+    date: "May 2025 - Jul 2025",
+  },
+  {
+    title: "Amazon Clone",
+    description: "Full-featured e-commerce platform with product catalog, shopping cart, and checkout functionality. Built with React and integrated with Firebase for backend services.",
+    tech: ["React", "Firebase", "JavaScript", "Tailwind CSS"],
+    liveLink: "https://amazon-clone-js-nine.vercel.app",
+    githubLink: "https://github.com/Rudra-1509/amazon-clone-js",
+    imgPath: "/images/project_amazon.png",
+    date: "Dec 2024 - Feb 2025",
+  },
+  {
+    title: "Subscription Tracker",
+    description: "Full-stack application to track and manage subscriptions with recurring payment tracking and expense analytics.",
+    tech: ["React", "Node.js", "MongoDB", "JavaScript"],
+    liveLink: "#",
+    githubLink: "https://github.com/Rudra-1509/subscription_tracker",
+    imgPath: "/images/devices.png",
+    date: "May 2025 - Aug 2025",
   },
 ];
 
@@ -279,4 +332,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
 };
