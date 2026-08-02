@@ -168,19 +168,14 @@ const techCategories = [
 
 const socialImgs = [
   {
-    name: "github",
-    url:"https://github.com/Rudra-1509",
-    imgPath: "/images/github.png",
-  },
-  {
     name: "linkedin",
-    url:"https://www.linkedin.com/in/rudranilmondal/",
+    url:"https://www.linkedin.com/in/rudranil1509",
     imgPath: "/images/linkedin.png",
   },
   {
-    name: "x",
-    url:"https://twitter.com",
-    imgPath: "/images/x.png",
+    name: "github",
+    url:"https://github.com/Rudra-1509",
+    imgPath: "/images/github.png",
   },
   {
     name: "email",

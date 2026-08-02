@@ -14,7 +14,11 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="icon hover:opacity-80 transition-opacity"
             >
-              <img src={socialImg.imgPath} alt={socialImg.name} />
+              <img
+                src={socialImg.imgPath}
+                alt={socialImg.name}
+                className={index === 1 || index === 2 ? "scale-60" : ""}
+              />
             </a>
           ))}
         </div>
