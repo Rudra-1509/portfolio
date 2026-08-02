@@ -6,6 +6,12 @@ import { techCategories } from "../constants";
 gsap.registerPlugin(ScrollTrigger);
 
 const TechStack = () => {
+  const languages = techCategories.find((category) => category.title === "Languages");
+  const frontend = techCategories.find((category) => category.title === "Frontend Development");
+  const backend = techCategories.find((category) => category.title === "Backend Development");
+  const ai = techCategories.find((category) => category.title === "AI / Machine Learning");
+  const tools = techCategories.find((category) => category.title === "Database / Cloud / Tools");
+
   useGSAP(() => {
     gsap.fromTo(
       ".stack-card",
@@ -21,31 +27,41 @@ const TechStack = () => {
     );
   }, []);
 
+  const renderCard = (category, className = "") => (
+    <article className={`stack-card ${className}`} key={category.title}>
+      <div className="stack-card-top">
+        <span>{category.icon}</span>
+        <div>
+          <p>{category.label}</p>
+          <h3>{category.title}</h3>
+        </div>
+      </div>
+      <div className="stack-pills">
+        {category.items.map((item) => <span key={item}>{item}</span>)}
+      </div>
+    </article>
+  );
+
   return (
     <section id="skills" className="stack-section">
       <div className="section-shell">
         <div className="section-heading-row">
           <div>
-            <p className="section-kicker">Technical toolkit</p>
-            <h2>Focused stack for full-stack AI product engineering.</h2>
+            <p className="section-kicker">Technologies I Work With</p>
+            <h2>A practical stack for building AI-powered full-stack applications, scalable APIs, and modern web experiences.</h2>
           </div>
-          <p>
-            Clean, practical technologies I use to ship responsive interfaces, APIs, retrieval systems, agent workflows, and deployable cloud apps.
-          </p>
         </div>
 
-        <div className="stack-grid">
-          {techCategories.map((category) => (
-            <article className="stack-card" key={category.title}>
-              <div className="stack-card-top">
-                <span>{category.icon}</span>
-                <h3>{category.title}</h3>
-              </div>
-              <div className="stack-pills">
-                {category.items.map((item) => <span key={item}>{item}</span>)}
-              </div>
-            </article>
-          ))}
+        <div className="stack-layout">
+          {renderCard(languages, "stack-card-foundation")}
+          <div className="stack-row">
+            {renderCard(frontend)}
+            {renderCard(backend)}
+          </div>
+          <div className="stack-row">
+            {renderCard(ai, "stack-card-ai")}
+            {renderCard(tools)}
+          </div>
         </div>
       </div>
     </section>

@@ -63,17 +63,17 @@ const abilities = [
   {
     imgPath: "/images/seo.png",
     title: "Full-Stack Development",
-    desc: "Building scalable web applications with React, Next.js, FastAPI, and modern development practices.",
+    desc: "Building responsive and scalable applications using React, Next.js, FastAPI, Node.js, and modern web technologies.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "AI/ML Integration",
-    desc: "Implementing AI solutions using LLMs, RAG, transformers, and vector databases for intelligent applications.",
+    title: "AI Engineering",
+    desc: "Developing intelligent applications using LLMs, RAG pipelines, embeddings, AI agents, and machine learning frameworks.",
   },
   {
     imgPath: "/images/time.png",
     title: "Problem Solving",
-    desc: "Strong foundation in data structures, algorithms, and system design. 300+ LeetCode problems solved.",
+    desc: "Strong foundation in algorithms, data structures, and computer science fundamentals with 330+ LeetCode problems solved.",
   },
 ];
 
@@ -136,26 +136,31 @@ const techStackIcons = [
 const techCategories = [
   {
     title: "Languages",
+    label: "Foundation layer",
     icon: "</>",
     items: ["C++", "JavaScript", "Python", "SQL"],
   },
   {
-    title: "Frontend",
+    title: "Frontend Development",
+    label: "Product interfaces",
     icon: "UI",
     items: ["React", "Next.js", "TypeScript", "HTML", "CSS", "Tailwind CSS", "Vite"],
   },
   {
-    title: "Backend",
+    title: "Backend Development",
+    label: "APIs and services",
     icon: "API",
     items: ["FastAPI", "Node.js", "Express.js"],
   },
   {
     title: "AI / Machine Learning",
+    label: "Intelligent systems",
     icon: "AI",
     items: ["PyTorch", "TensorFlow", "scikit-learn", "LLM APIs", "AI Agents", "RAG", "Embeddings", "Vector Search"],
   },
   {
-    title: "Databases / Cloud / Tools",
+    title: "Database / Cloud / Tools",
+    label: "Shipping and operations",
     icon: "Ops",
     items: ["PostgreSQL", "Firebase", "Docker", "Git", "GitHub", "Vercel", "Render"],
   },
@@ -187,7 +192,7 @@ const socialImgs = [
 const projects = [
   {
     title: "Multi-Agent Orchestration System",
-    description: "Real-time multi-agent orchestration where specialized agents collaborate using supervisor-based routing architecture. Implemented LLM-driven task decomposition with SSE-based streaming for live agent execution visualization.",
+    description: "A real-time multi-agent AI platform where autonomous agents collaborate through supervisor-based routing. Built with streaming execution, agent coordination, and live visualization of AI workflows.",
     tech: ["Python", "FastAPI", "LangGraph", "React", "TanStack Start"],
     liveLink: "https://multi-agentorchestration.vercel.app",
     githubLink: "https://github.com/Rudra-1509/multi-agent-orchestration",
@@ -196,8 +201,8 @@ const projects = [
   },
   {
     title: "AI Mock Interviewer",
-    description: "Full-stack voice-based AI mock interview platform that simulates technical and behavioral interviews using conversational AI. Integrated real-time speech recognition and dynamic question generation with AI-powered feedback analysis.",
-    tech: ["Next.js", "Vapi", "OpenAI", "Firebase", "Tailwind"],
+    description: "An AI-powered interview platform that conducts realistic technical and behavioral interviews using conversational AI. Includes voice interaction, dynamic questioning, and personalized feedback generation.",
+    tech: ["Next.js", "Vapi", "OpenAI", "Firebase", "Tailwind CSS"],
     liveLink: "https://ai-mock-interview-orcin.vercel.app",
     githubLink: "https://github.com/Rudra-1509/ai_mock_interview",
     imgPath: "/images/project_interview.png",
@@ -205,8 +210,8 @@ const projects = [
   },
   {
     title: "AI Study Assistant",
-    description: "AI-powered study assistant that transforms PDFs, images, and raw text into structured explanations using OCR and semantic retrieval. Achieved 100% processing success rate on 31 diverse documents with average latency of 55.6s.",
-    tech: ["React", "FastAPI", "Transformers", "HuggingFace", "Python"],
+    description: "An AI learning assistant that converts PDFs, images, and text into structured study material using OCR, embeddings, and LLM-powered generation. Designed for efficient knowledge extraction and personalized learning.",
+    tech: ["React", "FastAPI", "Python", "Embeddings", "RAG", "scikit-learn"],
     liveLink: "https://ai-study-assistant-sand.vercel.app",
     githubLink: "https://github.com/Rudra-1509/ai-study-assistant",
     imgPath: "/images/project_study.png",
@@ -214,7 +219,7 @@ const projects = [
   },
   {
     title: "Apple iPhone 15 Clone",
-    description: "Responsive e-commerce website clone showcasing modern web design with smooth animations and interactive product showcase using React and Three.js.",
+    description: "A high-quality product showcase inspired by Apple's design language, featuring smooth animations, interactive UI elements, and immersive 3D experiences.",
     tech: ["React", "Three.js", "Tailwind CSS", "JavaScript"],
     githubLink: "https://github.com/Rudra-1509/apple_iPhone_clone",
     imgPath: "/images/project3.png",
@@ -222,7 +227,7 @@ const projects = [
   },
   {
     title: "Amazon Clone",
-    description: "Full-featured e-commerce platform with product catalog, shopping cart, and checkout functionality. Built with React and integrated with Firebase for backend services.",
+    description: "A full-stack e-commerce platform featuring product browsing, cart management, and Firebase-powered backend integration.",
     tech: ["React", "Firebase", "JavaScript", "Tailwind CSS"],
     githubLink: "https://github.com/Rudra-1509/amazon-clone-js",
     imgPath: "/images/devices.png",
@@ -230,7 +235,7 @@ const projects = [
   },
   {
     title: "Subscription Tracker",
-    description: "Full-stack application to track and manage subscriptions with recurring payment tracking and expense analytics.",
+    description: "A personal finance application for tracking recurring subscriptions, monitoring expenses, and managing monthly spending insights.",
     tech: ["React", "Node.js", "MongoDB", "JavaScript"],
     githubLink: "https://github.com/Rudra-1509/subscription_tracker",
     imgPath: "/images/devices.png",

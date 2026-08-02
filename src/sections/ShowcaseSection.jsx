@@ -67,11 +67,11 @@ const ShowcaseSection = () => {
       <div className="section-shell">
         <div className="section-heading-row">
           <div>
-            <p className="section-kicker">Selected engineering work</p>
-            <h2>Product-style projects with AI, systems, and full-stack depth.</h2>
+            <p className="section-kicker">Featured Projects</p>
+            <h2>Featured Projects</h2>
           </div>
           <p>
-            A horizontal carousel of production-minded builds: streaming agent workflows, AI learning tools, interview automation, and polished web applications.
+            A collection of AI-powered applications and full-stack systems focused on solving practical problems through clean architecture and modern technologies.
           </p>
         </div>
 
