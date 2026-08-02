@@ -1,16 +1,9 @@
 const navLinks = [
-  {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Contact",
-    link: "#contact",
-  },
+  { name: "Work", link: "#work" },
+  { name: "About", link: "#about" },
+  { name: "Skills", link: "#skills" },
+  { name: "Experience", link: "#experience" },
+  { name: "Contact", link: "#contact" },
 ];
 
 const words = [
@@ -138,6 +131,34 @@ const techStackIcons = [
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
+  },
+];
+
+const techCategories = [
+  {
+    title: "Languages",
+    icon: "</>",
+    items: ["C++", "JavaScript", "Python", "SQL"],
+  },
+  {
+    title: "Frontend",
+    icon: "UI",
+    items: ["React", "TypeScript", "HTML", "CSS", "Tailwind CSS", "Vite"],
+  },
+  {
+    title: "Backend",
+    icon: "API",
+    items: ["FastAPI", "Node.js", "Express.js"],
+  },
+  {
+    title: "AI / Machine Learning",
+    icon: "AI",
+    items: ["LLM APIs", "AI Agents", "Embeddings", "RAG", "Vector Search", "scikit-learn"],
+  },
+  {
+    title: "Databases / Cloud / Tools",
+    icon: "Ops",
+    items: ["PostgreSQL", "Firebase", "Docker", "Git", "GitHub", "Vercel", "Render"],
   },
 ];
 
@@ -274,7 +295,7 @@ const projects = [
     date: "Feb 2026 - May 2026",
   },
   {
-    title: "AI Mock Interviewer (Voice-Based)",
+    title: "AI Mock Interviewer",
     description: "Full-stack voice-based AI mock interview platform that simulates technical and behavioral interviews using conversational AI. Integrated real-time speech recognition and dynamic question generation with AI-powered feedback analysis.",
     tech: ["Next.js", "Vapi", "OpenAI", "Firebase", "Tailwind"],
     liveLink: "https://ai-mock-interview-orcin.vercel.app",
@@ -295,7 +316,6 @@ const projects = [
     title: "Apple iPhone 15 Clone",
     description: "Responsive e-commerce website clone showcasing modern web design with smooth animations and interactive product showcase using React and Three.js.",
     tech: ["React", "Three.js", "Tailwind CSS", "JavaScript"],
-    liveLink: "https://apple-i-phone-clone-mu.vercel.app",
     githubLink: "https://github.com/Rudra-1509/apple_iPhone_clone",
     imgPath: "/images/project3.png",
     date: "May 2025 - Jul 2025",
@@ -304,16 +324,14 @@ const projects = [
     title: "Amazon Clone",
     description: "Full-featured e-commerce platform with product catalog, shopping cart, and checkout functionality. Built with React and integrated with Firebase for backend services.",
     tech: ["React", "Firebase", "JavaScript", "Tailwind CSS"],
-    liveLink: "https://amazon-clone-js-nine.vercel.app",
     githubLink: "https://github.com/Rudra-1509/amazon-clone-js",
-    imgPath: "/images/project_amazon.png",
+    imgPath: "/images/devices.png",
     date: "Dec 2024 - Feb 2025",
   },
   {
     title: "Subscription Tracker",
     description: "Full-stack application to track and manage subscriptions with recurring payment tracking and expense analytics.",
     tech: ["React", "Node.js", "MongoDB", "JavaScript"],
-    liveLink: "#",
     githubLink: "https://github.com/Rudra-1509/subscription_tracker",
     imgPath: "/images/devices.png",
     date: "May 2025 - Aug 2025",
@@ -331,6 +349,7 @@ export {
   socialImgs,
   techStackIcons,
   techStackImgs,
+  techCategories,
   navLinks,
   projects,
 };

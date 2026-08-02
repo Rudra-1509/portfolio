@@ -470,3 +470,78 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
+/* Modern portfolio redesign */
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.16), transparent 30rem),
+    radial-gradient(circle at 85% 5%, rgba(168, 85, 247, 0.12), transparent 28rem),
+    #030711;
+}
+
+.navbar.scrolled { @apply bg-[#050816]/85 backdrop-blur-xl border-b border-white/10; }
+.navbar .contact-btn .inner { @apply rounded-full bg-white text-black hover:bg-cyan-200; }
+
+.section-shell { @apply w-full max-w-[1200px] mx-auto px-5 md:px-10; }
+.section-kicker { @apply text-sm uppercase tracking-[0.32em] text-cyan-300 font-semibold mb-4; }
+.section-heading-row { @apply flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12; }
+.section-heading-row h2 { @apply text-3xl md:text-5xl font-bold tracking-[-0.04em] max-w-3xl; }
+.section-heading-row > p { @apply text-white-50 leading-7 max-w-xl; }
+
+.hero-section { @apply relative min-h-screen flex items-center overflow-hidden pt-28 pb-16; }
+.hero-container { @apply relative z-10 max-w-[1180px] mx-auto px-5 md:px-10; }
+.hero-glow { @apply absolute rounded-full blur-3xl opacity-60; }
+.hero-glow-one { @apply w-[38rem] h-[38rem] -top-40 -left-32 bg-blue-500/20; }
+.hero-glow-two { @apply w-[34rem] h-[34rem] top-36 right-[-12rem] bg-fuchsia-500/10; }
+.hero-eyebrow { @apply inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-cyan-200 backdrop-blur; }
+.hero-heading { @apply mt-7 max-w-5xl text-5xl md:text-7xl xl:text-8xl font-black tracking-[-0.07em] leading-[0.92]; }
+.hero-copy { @apply mt-7 max-w-3xl text-lg md:text-xl text-white-50 leading-8; }
+.hero-tags { @apply mt-8 flex flex-wrap gap-3; }
+.hero-tags span { @apply rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm text-cyan-100; }
+.hero-actions { @apply mt-9 flex flex-col sm:flex-row gap-4 items-start sm:items-center; }
+.secondary-cta { @apply inline-flex h-14 items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 font-semibold text-white transition hover:-translate-y-1 hover:bg-white/10; }
+.hero-metrics { @apply mt-14 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl; }
+.hero-metrics div { @apply rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur transition hover:-translate-y-1 hover:border-cyan-300/30; }
+.hero-metrics strong { @apply block text-3xl text-white; }
+.hero-metrics span { @apply text-sm text-white-50; }
+
+.projects-section, .stack-section, .about-section { @apply py-20 md:py-28; }
+.project-carousel { @apply flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scroll-smooth; scrollbar-width: thin; }
+.project-card { @apply snap-start min-w-[86vw] md:min-w-[420px] lg:min-w-[460px] rounded-[28px] border border-white/10 bg-white/[0.045] overflow-hidden backdrop-blur-xl transition duration-500 hover:-translate-y-3 hover:border-cyan-300/40 hover:shadow-[0_24px_80px_rgba(34,211,238,0.16)]; }
+.project-image-wrap { @apply relative h-64 overflow-hidden bg-black; }
+.project-image { @apply w-full h-full object-cover transition duration-700 group-hover:scale-110; }
+.project-overlay { @apply absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition duration-500 group-hover:opacity-100; }
+.overlay-actions { @apply flex flex-col sm:flex-row gap-3 px-5; }
+.project-action { @apply rounded-full border border-white/15 bg-white/10 px-5 py-3 text-sm font-bold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/20; }
+.project-action.primary { @apply border-cyan-300/60 bg-cyan-300 text-black hover:bg-cyan-200; }
+.project-content { @apply p-6 space-y-4; }
+.project-date { @apply text-xs uppercase tracking-[0.22em] text-cyan-200; }
+.project-content h3 { @apply text-2xl font-bold tracking-[-0.03em]; }
+.project-content p:not(.project-date) { @apply text-white-50 leading-7; }
+.project-tech { @apply flex flex-wrap gap-2 pt-2; }
+.project-tech span, .stack-pills span { @apply rounded-full border border-white/10 bg-white/[0.06] px-3 py-1.5 text-xs text-white-50; }
+
+.about-card { @apply grid lg:grid-cols-[0.9fr_1.1fr] gap-8 rounded-[32px] border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.025] p-6 md:p-10 backdrop-blur-xl; }
+.about-card h2 { @apply text-3xl md:text-5xl font-bold tracking-[-0.04em] mb-6; }
+.about-card p { @apply text-white-50 leading-8; }
+.ability-grid { @apply grid gap-4; }
+.ability-card { @apply rounded-2xl border border-white/10 bg-black/20 p-5 transition hover:-translate-y-1 hover:border-cyan-300/30; }
+.ability-card h3 { @apply text-xl font-bold mb-2; }
+
+.stack-grid { @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5; }
+.stack-card { @apply rounded-[26px] border border-white/10 bg-white/[0.045] p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-cyan-300/35 hover:bg-white/[0.07]; }
+.stack-card-top { @apply flex items-center gap-3 mb-6; }
+.stack-card-top span { @apply flex size-11 items-center justify-center rounded-2xl bg-cyan-300/10 text-sm font-black text-cyan-200; }
+.stack-card h3 { @apply text-2xl font-bold tracking-[-0.03em]; }
+.stack-pills { @apply flex flex-wrap gap-2; }
+
+.cta-button { @apply rounded-full bg-cyan-300; }
+.cta-button .bg-circle { @apply bg-white; }
+.cta-button .text { @apply font-bold text-black; }
+.card-border { @apply border-white/10 bg-white/[0.04] backdrop-blur; }
+
+@media (max-width: 768px) {
+  .navbar nav.desktop { @apply hidden; }
+  .hero-heading { @apply text-5xl; }
+  .project-card { @apply min-w-[88vw]; }
+}
