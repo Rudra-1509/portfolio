@@ -10,6 +10,7 @@ const demoProjects = new Set([
   "Multi-Agent Orchestration System",
   "AI Study Assistant",
   "AI Mock Interviewer",
+  "Apple iPhone 15 Clone",
 ]);
 
 const ProjectCard = ({ project }) => {

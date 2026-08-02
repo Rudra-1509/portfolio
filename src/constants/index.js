@@ -189,7 +189,7 @@ const projects = [
     title: "Multi-Agent Orchestration System",
     description: "A real-time multi-agent AI platform where autonomous agents collaborate through supervisor-based routing. Built with streaming execution, agent coordination, and live visualization of AI workflows.",
     tech: ["Python", "FastAPI", "LangGraph", "React", "TanStack Start"],
-    liveLink: "https://multi-agentorchestration.vercel.app",
+    liveLink: "https://multi-agent-orchestration.rudranilmn1509.workers.dev/",
     githubLink: "https://github.com/Rudra-1509/multi-agent-orchestration",
     imgPath: "/images/project_multiagent.jpg",
     date: "Feb 2026 - May 2026",
@@ -216,6 +216,7 @@ const projects = [
     title: "Apple iPhone 15 Clone",
     description: "A high-quality product showcase inspired by Apple's design language, featuring smooth animations, interactive UI elements, and immersive 3D experiences.",
     tech: ["React", "Three.js", "Tailwind CSS", "JavaScript"],
+    liveLink: "https://apple-i-phone-clone-mu.vercel.app",
     githubLink: "https://github.com/Rudra-1509/apple_iPhone_clone",
     imgPath: "/images/project_apple.png",
     date: "May 2025 - Jul 2025",
@@ -234,7 +235,7 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB", "JavaScript"],
     githubLink: "https://github.com/Rudra-1509/subscription_tracker",
     imgPath: "/images/project_subscription.jpg",
-    date: "May 2025 - Aug 2025",
+    date: "Jul 2025 - Aug 2025",
   },
 ];
 
