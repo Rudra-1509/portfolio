@@ -48,8 +48,8 @@ const Contact = () => {
       <Toaster position="bottom-center" />
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get in Touch - Let's Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Let's build something meaningful."
+          sub="Have an idea, opportunity, or collaboration in mind? Feel free to reach out."
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
@@ -67,7 +67,7 @@ const Contact = () => {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What's your good name?"
+                    placeholder="Enter your name"
                     required
                   />
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What's your email address?"
+                    placeholder="Enter your email address"
                     required
                   />
                 </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="Tell me about your project or message"
                     rows="5"
                     required
                   />

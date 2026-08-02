@@ -1,21 +1,30 @@
-import React from "react";
 import { abilities } from "../constants";
 
 const FeatureCards = () => {
   return (
-    <div className="w-full padding-x-lg">
-      <div className="mx-auto grid-3-cols">
-        {abilities.map(({ imgPath, title, desc }) => (
-          <div key={title} className="card-border rounded-xl p-8 flex flex-col gap-4">
-            <div className="size-14 flex items-center justify-center rounded-full">
-                <img src={imgPath} alt="title" />
-            </div>
-            <h3 className="text-white text-2xl font-semibold mt-2">{title}</h3>
-            <p className="text-white-50 text-lg">{desc}</p>
+    <section id="about" className="about-section">
+      <div className="section-shell">
+        <div className="about-card">
+          <div>
+            <p className="section-kicker">About</p>
+            <h2>Software engineer passionate about building intelligent products and solving complex engineering problems.</h2>
+            <p className="whitespace-pre-line">
+              I’m Rudranil Mondal, a B.Tech Computer Science student at NIT Durgapur. I enjoy building AI-powered applications, scalable web systems, and developer-focused tools. My work combines strong CS fundamentals with modern technologies like React, FastAPI, LLMs, and cloud platforms.
+
+I focus on writing maintainable code, designing thoughtful user experiences, and continuously improving through problem solving and building real-world projects.
+            </p>
           </div>
-        ))}
+          <div className="ability-grid">
+            {abilities.map(({ title, desc }) => (
+              <div key={title} className="ability-card">
+                <h3>{title}</h3>
+                <p>{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

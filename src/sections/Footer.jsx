@@ -3,27 +3,20 @@ import { socialImgs } from "../constants";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="flex flex-col justify-center">
-          <p>Terms & Conditions</p>
-        </div>
+      <div className="footer-container footer-container-simple">
+        <p>© 2026 Rudranil Mondal. All rights reserved.</p>
         <div className="socials">
           {socialImgs.map((socialImg, index) => (
-            <a 
+            <a
               key={index}
-              href={socialImg.url} 
-              target="_blank" 
+              href={socialImg.url}
+              target="_blank"
               rel="noopener noreferrer"
               className="icon hover:opacity-80 transition-opacity"
             >
               <img src={socialImg.imgPath} alt={socialImg.name} />
             </a>
           ))}
-        </div>
-        <div className="flex flex-col justify-center">
-          <p className="text-center md:text-end">
-            © {new Date().getFullYear()} Rudranil Mondal. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
