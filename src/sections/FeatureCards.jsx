@@ -9,9 +9,8 @@ const FeatureCards = () => {
             <p className="section-kicker">About</p>
             <h2>Software engineer passionate about building intelligent products and solving complex engineering problems.</h2>
             <p className="whitespace-pre-line">
-              I’m Rudranil Mondal, a B.Tech Computer Science student at NIT Durgapur. I enjoy building AI-powered applications, scalable web systems, and developer-focused tools. My work combines strong CS fundamentals with modern technologies like React, FastAPI, LLMs, and cloud platforms.
+              I’m Rudranil Mondal, a B.Tech Computer Science student at NIT Durgapur passionate about building AI-powered applications, scalable web systems, and developer tools. I work with technologies like React, FastAPI, LLMs, and cloud platforms, combining strong CS fundamentals with practical problem-solving to create impactful solutions.
 
-I focus on writing maintainable code, designing thoughtful user experiences, and continuously improving through problem solving and building real-world projects.
             </p>
           </div>
           <div className="ability-grid">

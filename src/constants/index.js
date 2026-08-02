@@ -191,7 +191,7 @@ const projects = [
     tech: ["Python", "FastAPI", "LangGraph", "React", "TanStack Start"],
     liveLink: "https://multi-agentorchestration.vercel.app",
     githubLink: "https://github.com/Rudra-1509/multi-agent-orchestration",
-    imgPath: "/images/project_multiagent.png",
+    imgPath: "/images/project_multiagent.jpg",
     date: "Feb 2026 - May 2026",
   },
   {
@@ -200,16 +200,16 @@ const projects = [
     tech: ["Next.js", "Vapi", "OpenAI", "Firebase", "Tailwind CSS"],
     liveLink: "https://ai-mock-interview-orcin.vercel.app",
     githubLink: "https://github.com/Rudra-1509/ai_mock_interview",
-    imgPath: "/images/project_interview.png",
+    imgPath: "/images/project_interview.jpg",
     date: "Apr 2025 - Jul 2025",
   },
   {
     title: "AI Study Assistant",
     description: "An AI learning assistant that converts PDFs, images, and text into structured study material using OCR, embeddings, and LLM-powered generation. Designed for efficient knowledge extraction and personalized learning.",
     tech: ["React", "FastAPI", "Python", "Embeddings", "RAG", "scikit-learn"],
-    liveLink: "https://ai-study-assistant-sand.vercel.app",
+    liveLink: "https://ai-study-assistant-delta-lake.vercel.app/",
     githubLink: "https://github.com/Rudra-1509/ai-study-assistant",
-    imgPath: "/images/project_study.png",
+    imgPath: "/images/project_study.jpg",
     date: "Nov 2025 - Jan 2026",
   },
   {
@@ -217,7 +217,7 @@ const projects = [
     description: "A high-quality product showcase inspired by Apple's design language, featuring smooth animations, interactive UI elements, and immersive 3D experiences.",
     tech: ["React", "Three.js", "Tailwind CSS", "JavaScript"],
     githubLink: "https://github.com/Rudra-1509/apple_iPhone_clone",
-    imgPath: "/images/project3.png",
+    imgPath: "/images/project_apple.png",
     date: "May 2025 - Jul 2025",
   },
   {
@@ -225,7 +225,7 @@ const projects = [
     description: "A full-stack e-commerce platform featuring product browsing, cart management, and Firebase-powered backend integration.",
     tech: ["React", "Firebase", "JavaScript", "Tailwind CSS"],
     githubLink: "https://github.com/Rudra-1509/amazon-clone-js",
-    imgPath: "/images/devices.png",
+    imgPath: "/images/project_amazon_clone.jpg",
     date: "Dec 2024 - Feb 2025",
   },
   {
@@ -233,7 +233,7 @@ const projects = [
     description: "A personal finance application for tracking recurring subscriptions, monitoring expenses, and managing monthly spending insights.",
     tech: ["React", "Node.js", "MongoDB", "JavaScript"],
     githubLink: "https://github.com/Rudra-1509/subscription_tracker",
-    imgPath: "/images/devices.png",
+    imgPath: "/images/project_subscription.jpg",
     date: "May 2025 - Aug 2025",
   },
 ];
