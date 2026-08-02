@@ -49,7 +49,7 @@ const Hero = () => {
 
             <div className="hero-reveal hero-metrics">
               <div><strong>3+</strong><span>AI Applications Built</span></div>
-              <div><strong>330+</strong><span>LeetCode Problems Solved</span></div>
+              <div><strong>350+</strong><span>LeetCode Problems Solved</span></div>
               <div><strong>9.2</strong><span>CGPA in CSE</span></div>
             </div>
           </div>
