@@ -14,8 +14,11 @@ const FeatureCards = () => {
             </p>
           </div>
           <div className="ability-grid">
-            {abilities.map(({ title, desc }) => (
+            {abilities.map(({ title, desc, imgPath }) => (
               <div key={title} className="ability-card">
+                <div className="ability-icon">
+                  <img src={imgPath} alt="" aria-hidden="true" />
+                </div>
                 <h3>{title}</h3>
                 <p>{desc}</p>
               </div>
