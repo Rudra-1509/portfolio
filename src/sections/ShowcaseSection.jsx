@@ -72,7 +72,7 @@ const ShowcaseSection = () => {
             <h2>Featured Projects</h2>
           </div>
           <p>
-            A collection of AI-powered applications and full-stack systems focused on solving practical problems through clean architecture and modern technologies.
+            A collection of AI-powered applications and backend-focused full-stack systems focused on solving practical problems through clean architecture and modern technologies.
           </p>
         </div>
 

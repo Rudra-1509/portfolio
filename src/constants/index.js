@@ -62,12 +62,12 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Full-Stack Development",
+    title: "Backend-Focused Full-Stack Development",
     desc: "Building responsive and scalable applications using React, Next.js, FastAPI, Node.js, and modern web technologies.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "AI Engineering",
+    title: "AI/ML Engineering",
     desc: "Developing intelligent applications using LLMs, RAG pipelines, embeddings, AI agents, and machine learning frameworks.",
   },
   {
