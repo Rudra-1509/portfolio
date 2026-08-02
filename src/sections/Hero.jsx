@@ -1,75 +1,69 @@
-import { useGSAP } from "@gsap/react"
-import Button from "../components/Button"
-import HeroExperience from "../components/Models/HeroModels/HeroExperience"
-import { words } from "../constants"
-import gsap from "gsap"
-import AnimatedCounter from "../components/AnimatedCounter"
+import { useGSAP } from "@gsap/react";
+import Button from "../components/Button";
+import HeroExperience from "../components/Models/HeroModels/HeroExperience";
+import gsap from "gsap";
+
+const highlights = ["Software Engineer", "AI / Full-Stack Developer", "DSA + Problem Solving"];
+
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".hero-reveal",
+      { y: 36, opacity: 0 },
+      { y: 0, opacity: 1, stagger: 0.12, duration: 0.9, ease: "power3.out" }
+    );
 
-    useGSAP(()=>{
-        gsap.fromTo('.hero-text h1',
-            {
-                y:50,
-                opacity:0
+    gsap.fromTo(
+      ".hero-model-card",
+      { scale: 0.96, opacity: 0, y: 28 },
+      { scale: 1, opacity: 1, y: 0, duration: 1.1, delay: 0.25, ease: "power3.out" }
+    );
+  }, []);
 
-            },
-            {
-                y:0,
-                opacity:1,
-                stagger:0.5,
-                duration:1,
-                ease: "power.inOut"
-            }
-        )
-    })
   return (
-    <section className='relative overflow-hidden' id='hero'>
-        <div className='absolute top-0 left-0 z-10'>
-            <img src="/images/bg.png" alt="background" />
+    <section id="hero" className="hero-section">
+      <div className="hero-glow hero-glow-one" />
+      <div className="hero-glow hero-glow-two" />
+
+      <div className="hero-container">
+        <div className="hero-content-grid">
+          <div className="hero-copy-block">
+            <p className="hero-reveal hero-eyebrow">Rudranil Mondal · Software Engineering Portfolio</p>
+            <h1 className="hero-reveal hero-heading">
+              Designing dependable AI products and full-stack systems.
+            </h1>
+            <p className="hero-reveal hero-copy">
+              Software engineer focused on React, FastAPI, LLM applications, clean architecture, data structures, and problem solving. I build polished, scalable experiences with practical engineering depth.
+            </p>
+
+            <div className="hero-reveal hero-tags">
+              {highlights.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
+
+            <div className="hero-reveal hero-actions">
+              <Button className="md:w-72 w-60 h-14" targetId="work" text="View Projects" />
+              <a className="secondary-cta" href="#contact">Let's Connect</a>
+            </div>
+
+            <div className="hero-reveal hero-metrics">
+              <div><strong>3+</strong><span>AI product builds</span></div>
+              <div><strong>300+</strong><span>DSA problems solved</span></div>
+              <div><strong>9.2</strong><span>CGPA in CSE</span></div>
+            </div>
+          </div>
+
+          <figure className="hero-model-card" aria-label="Interactive developer workspace model">
+            <div className="hero-model-accent" />
+            <div className="hero-3d-layout-modern">
+              <HeroExperience />
+            </div>
+          </figure>
         </div>
-
-        <div className='hero-layout'> 
-            {/*LEFT : Hero Content*/}
-            <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
-                <div className='flex flex-col gap-7'>
-                   <div className='hero-text'>
-                        <h1>Shaping 
-                            <span className='slide'>
-                                <span className='wrapper'>
-                                    {words.map((word,index)=>(
-                                        <span key={index} className='flex items-center md:gap-3 gap-1 pb-2'>
-                                            <img src={word.imgPath} alt={word.text} className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50'/>
-                                            <span>{word.text}</span>
-                                        </span>
-                                    ))}
-                                </span>
-                            </span>
-                        </h1>
-                        <h1>into Real Projects</h1>
-                        <h1>that Deliver Results </h1>
-                    </div>
-
-                    <p className="text-white-50 md:text-xl relative z-10 pointer-events-none"  >
-                        Hi, I'm Rudranil Mondal — a full-stack developer building AI-powered web apps and scalable systems. Currently pursuing BTech CSE at NIT Durgapur.
-                    </p>  
-                    <Button 
-                      className='md:w-80 md:h-16 w-60 h-12'
-                      targetId='work'
-                      text="See My Work"
-                    />
-                </div>
-            </header>
-            {/*Right:3D Model */}
-            <figure>
-                <div className="hero-3d-layout">
-                    <HeroExperience/>
-                </div>
-            </figure>
-        </div>
-
-        {/* <AnimatedCounter/> */}
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

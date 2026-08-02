@@ -1,73 +1,54 @@
 import { useGSAP } from "@gsap/react";
-import TechIcon from "../components/Models/TechLogos/TechIcon";
-import TitleHeader from "../components/TitleHeader";
-import { techStackIcons, techStackImgs } from "../constants";
-import gsap from "gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { techCategories } from "../constants";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const TechStack = () => {
   useGSAP(() => {
     gsap.fromTo(
-      ".tech-card",
-      { y: 50, opacity: 0 },
+      ".stack-card",
+      { y: 36, opacity: 0 },
       {
+        y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: "#skills",
-          start: "top center",
-        },
+        duration: 0.75,
+        stagger: 0.1,
+        ease: "power3.out",
+        scrollTrigger: { trigger: "#skills", start: "top 70%" },
       }
     );
   }, []);
+
   return (
-    <div id="skills" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
-          title="My Preferred Tech Stack"
-          sub="🤝 The Skills I Bring to The Table"
-        />
+    <section id="skills" className="stack-section">
+      <div className="section-shell">
+        <div className="section-heading-row">
+          <div>
+            <p className="section-kicker">Technical toolkit</p>
+            <h2>Focused stack for full-stack AI product engineering.</h2>
+          </div>
+          <p>
+            Clean, practical technologies I use to ship responsive interfaces, APIs, retrieval systems, agent workflows, and deployable cloud apps.
+          </p>
+        </div>
 
-        <div className="tech-grid">
-          {techStackIcons.map((icon) => (
-            <div
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-              key={icon.name}
-            >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <TechIcon model={icon} />
-                </div>
-
-                <div className="padding-x w-full">
-                  <p>{icon.name}</p>
-                </div>
+        <div className="stack-grid">
+          {techCategories.map((category) => (
+            <article className="stack-card" key={category.title}>
+              <div className="stack-card-top">
+                <span>{category.icon}</span>
+                <h3>{category.title}</h3>
               </div>
-            </div>
+              <div className="stack-pills">
+                {category.items.map((item) => <span key={item}>{item}</span>)}
+              </div>
+            </article>
           ))}
-
-          {/* for static images 
-          {techStackImgs.map((icon) => (
-            <div
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-              key={icon.name}
-            >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <img src={icon.imgPath} alt={icon.name}/>
-              </div>
-              <div className="padding-x w-full">
-                <p>{icon.name}</p>
-              </div>
-            </div>
-          ))} */}
-
-
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
