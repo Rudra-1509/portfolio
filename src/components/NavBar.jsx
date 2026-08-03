@@ -23,8 +23,10 @@ const NavBar = () => {
           Rudra
         </a>
 
-        <nav className={`desktop transition-opacity duration-2000
-        ${loaded? 'opacity-100' : 'opacity-0'}`}>
+        <nav
+          className={`desktop transition-opacity duration-2000
+        ${loaded ? "opacity-100" : "opacity-0"}`}
+        >
           <ul>
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
@@ -37,11 +39,23 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        <div className="flex justify-end items-center gap-3">
+          <a
+            href="https://drive.google.com/file/d/1BlsXQqvoThN6bwgcJjnv-aaiY9knGCgG/view?usp=sharing"
+            className="contact-btn group"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="inner">
+              <span>My Resume</span>
+            </div>
+          </a>
+          <a href="#contact" className="contact-btn group">
+            <div className="inner">
+              <span>Contact me</span>
+            </div>
+          </a>
+        </div>
       </div>
     </header>
   );
