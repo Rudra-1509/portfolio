@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { navLinks } from "../constants";
 
 
-const DRIVE_RESUME=import.meta.env.VITE_DRIVE_RESUME;
+const RESUME_URL = "/resume.pdf";
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [loaded, setLoaded] = useState(false);
@@ -43,7 +43,7 @@ const NavBar = () => {
 
         <div className="flex justify-end items-center gap-3">
           <a
-            href={DRIVE_RESUME}
+            href={RESUME_URL}
             className="contact-btn group"
             target="_blank"
             rel="noopener noreferrer"
